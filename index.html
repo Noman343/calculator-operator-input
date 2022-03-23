@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+        .container{
+            width: 100%;
+            text-align: center;
+            margin-top: 5%;
+        }
+        label{
+            display: block;
+            margin: 10px;
+            font-size: 27px;
+            font-weight: 300;
+        }
+        input{
+            font-size: 15px;
+            background-color: antiquewhite;
+        }
+        button{
+            width: 50px;
+            font-size: 17px;
+            background-color: gray;
+            border-radius: 3px;
+            margin: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+       <!--*******************  CACULATOR  ************ -->
+
+    <div class="container">
+      <div class="inps">
+        <label for="firstInp">First Value</label>
+        <input id="firstInp" type="number" />
+      </div>
+      <div class="inps">
+        <label for="opertrs">Operator</label>
+        <input id="opertrs" type="text" />
+      </div>
+
+      <div class="inps">
+        <label for="secondInp">Second Value</label>
+        <input id="secondInp" type="number" />
+      </div>
+
+      <div style="text-align: center;">
+        <button onClick="add('firstInp','opertrs','secondInp')">=</button>
+      </div>
+      <div style="text-align: center;">
+        <h2 id="result"></h2>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
